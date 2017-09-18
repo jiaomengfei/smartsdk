@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/item_guide_viewpage.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/data/DateConvertUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/device/MobileInfoUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/image/ImageCompress.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/image/ImageExInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/metadata/MetadataUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/net/WiFiUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/secure/HashUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/secure/RandomUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/secure/SecUserInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/secure/SecurePreferences.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/secure/business/SecUserInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/secure/business/SecurePreferences.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/secure/hash/HashUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/secure/random/RandomUtil.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/system/HandlerMessageUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/system/IntentUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/system/KillProcess.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/utils/PackageUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/smartlibrary/src/main/java/version/VersionUtils.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

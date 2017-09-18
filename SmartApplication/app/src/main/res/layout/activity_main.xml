@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.MainActivity">
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#e5e5e5"></View>
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_home"
+            style="@style/tabs_fuction"
+            android:checked="true"
+            android:drawableTop="@drawable/tabs_shouye_bg"
+            android:text="主页" />
+
+        <RadioButton
+            android:id="@+id/main_live"
+            style="@style/tabs_fuction"
+            android:drawableTop="@drawable/tabs_fenxiang_bg"
+            android:text="分享" />
+
+
+        <RadioButton
+            android:id="@+id/main_video"
+            style="@style/tabs_fuction"
+            android:drawableTop="@drawable/tabs_kefu_bg"
+            android:text="客服" />
+
+        <RadioButton
+            android:id="@+id/main_me"
+            style="@style/tabs_fuction"
+            android:drawableTop="@drawable/tabs_wode_bg"
+            android:text="我的" />
+
+    </RadioGroup>
+</LinearLayout>

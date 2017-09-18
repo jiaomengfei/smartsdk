@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragment.AcountFragment">
+
+    <!--版本更新-->
+    <LinearLayout
+        android:id="@+id/version_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/account_item_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/account_version_update_img" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="版本更新"
+            android:textColor="@color/account_text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/account_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/account_text"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/share_more" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/share_line"></View>
+
+</LinearLayout>
