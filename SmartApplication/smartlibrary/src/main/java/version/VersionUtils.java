@@ -7,12 +7,12 @@ import android.content.pm.PackageManager.NameNotFoundException;
 public class VersionUtils {
 
 	/**
-	 * »ñÈ¡°æ±¾name
+	 * è·å–ç‰ˆæœ¬name
 	 *
 	 * @param context
-	 *                  ³ÌĞòÉÏÏÂÎÄ
+	 *                  ç¨‹åºä¸Šä¸‹æ–‡
 	 * @return
-	 *                ³ÌĞòÉèÖÃµÄ°æ±¾Ãû³Æ£»ÈôÊ§°ÜÔò·µ»Ønull
+	 *                ç¨‹åºè®¾ç½®çš„ç‰ˆæœ¬åç§°ï¼›è‹¥å¤±è´¥åˆ™è¿”å›null
 	 */
     public static String GetVersionName(Context context) {
     	String strVersionName = null;
@@ -29,12 +29,12 @@ public class VersionUtils {
 	}
 
     /**
-	 * »ñÈ¡°æ±¾code
+	 * è·å–ç‰ˆæœ¬code
 	 *
 	 * @param context
-	 *                  ³ÌĞòÉÏÏÂÎÄ
+	 *                  ç¨‹åºä¸Šä¸‹æ–‡
 	 * @return
-	 *                ³ÌĞòÉèÖÃµÄ°æ±¾code£»ÈôÊ§°ÜÔò·µ»Ønull
+	 *                ç¨‹åºè®¾ç½®çš„ç‰ˆæœ¬codeï¼›è‹¥å¤±è´¥åˆ™è¿”å›null
 	 */
     public static String GetVersionCode(Context context) {
     	String strVersionCode = null;

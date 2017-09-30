@@ -4,7 +4,7 @@ import android.content.Context;
 
 
 /**
- * Created by zxk on 2017/3/17 0017.
+ * Created by jmfz on 2017/3/17 0017.
  */
 
 public class Constant {

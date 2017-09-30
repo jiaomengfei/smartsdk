@@ -14,6 +14,14 @@
     <color name="account_item_color">#dddddd</color>
     <color name="account_text">#0c2038</color>
 
+    <!-- 支付密码输入框自定义控件-->
+    <color name="default_ev_border_color">#dcdcdc</color>
+    <color name="default_ev_password_color">#000000</color>
+
+    <!-- 分割线 -->
+    <color name="line_color_item_side_divider">#E6E6E6</color>
+
+
 
 
 </resources>

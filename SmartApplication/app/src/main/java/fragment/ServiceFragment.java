@@ -15,17 +15,30 @@ import test.jiao.smartapplication.R;
  */
 public class ServiceFragment extends BaseFragment {
 
-
-    public ServiceFragment() {
-        // Required empty public constructor
-    }
-
+    private View baseView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_, container, false);
+        baseView = inflater.inflate(R.layout.fragment_, null);
+        initTitle();
+        initView();
+        initData();
+        return baseView;
+    }
+
+    private void initData() {
+
+    }
+
+    private void initView() {
+
+    }
+
+    private void initTitle() {
+
+        setTitleContent(R.string.title_service, baseView);
     }
 
 

@@ -8,21 +8,10 @@ import android.os.Bundle;
 import java.io.Serializable;
 import java.util.Map;
 
-/**
- * 跳转工具封装
- *
- * @author dzyssssss
- *
- */
+
 public class IntentUtils {
 
-	/**
-	 * 支持int、String,boolean,Serializable数据类型传递
-	 *
-	 * @param paramContext
-	 * @param paramTo
-	 * @param paramData
-	 */
+
 	public static void switchActivity(Context paramContext, Class paramTo,
 									  Map<?, ?> paramData) {
 
@@ -59,13 +48,7 @@ public class IntentUtils {
 		paramContext.startActivity(aIntent);
 	}
 
-	/**
-	 * 支持int、String,boolean,Serializable数据类型传递
-	 * 
-	 * @param paramContext
-	 * @param paramTo
-	 * @param paramData
-	 */
+
 	public static void switchActivityForResult(Activity paramContext,
 											   Class paramTo, int paramRequestCode, Map<?, ?> paramData) {
         

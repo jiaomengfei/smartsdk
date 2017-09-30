@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
 import android.view.WindowManager;
 
 import base.BaseAppActivity;
@@ -14,7 +15,7 @@ import test.jiao.smartapplication.R;
 /**
  * 欢迎页
  */
-public class WelcomeActivity extends BaseAppActivity {
+public class WelcomeActivity extends BaseAppActivity implements View.OnClickListener {
 
 
     private Handler handler = new Handler() {
@@ -55,4 +56,8 @@ public class WelcomeActivity extends BaseAppActivity {
         super.onStop();
     }
 
+    @Override
+    public void onClick(View view) {
+
+    }
 }

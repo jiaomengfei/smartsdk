@@ -21,11 +21,6 @@ public class MobileInfoUtils {
 
 	private volatile static MobileInfoUtils mMobileInfoUtils = null;
 
-	/**
-	 * 获取单例；双重校验锁方式
-	 *
-	 * @return
-	 */
 	public static MobileInfoUtils getSingleton() {
 		if (mMobileInfoUtils == null) {
 			synchronized (MobileInfoUtils.class) {
@@ -37,12 +32,7 @@ public class MobileInfoUtils {
 		return mMobileInfoUtils;
 	}
 
-	/**
-	 * 获取手机的IMEI号码
-	 *
-	 * @param pContext
-	 * @return 若获取失败，则返回默认的全0串
-	 */
+
 //	public String getIMEI(Context pContext) {
 //		String strIMEI = "000000000000000";
 //
@@ -65,7 +55,7 @@ public class MobileInfoUtils {
 //			e.printStackTrace();
 //		}
 //
-//		// 若没有设备id，则返回默认的全0串
+//		// ??????璞竔d??????????0??
 //		if (TextUtils.isEmpty(strIMEI)) {
 //			strIMEI = "000000000000000";
 //		}
@@ -73,12 +63,7 @@ public class MobileInfoUtils {
 //		return strIMEI;
 //	}
 
-	/**
-	 * 获取手机的IMEI号码
-	 *
-	 * @param pContext
-	 * @return 若获取失败，则返回默认的全0串
-	 */
+
 //	public String getIMSI(final Context pContext)	  {
 //		String strIMSI = "000000000000000";
 //
@@ -110,25 +95,16 @@ public class MobileInfoUtils {
 //	    return strIMSI;
 //	  }
 
-	/**
-	 * 获取手机型号
-	 */
 	public String getModel()	  {
 	    return Build.MODEL;
 	  }
 
-	/**
-	 * 获取手机厂商信息
-	 * @return
-	 */
+
 	  public String getManufacturer()	  {
 	    return Build.MANUFACTURER;
 	  }
 
-	  /**
-	   * 获取序列号
-	   * @return
-	   */
+
 	public String getSerialno() {
 		String serialno = null;
 
@@ -146,11 +122,6 @@ public class MobileInfoUtils {
 		return serialno;
 	}
 
-	/**
-	 * 获取IPv4版本的ip地址
-	 *
-	 * @return
-	 */
 	private String getIPAddressLocal(){
 		    try
 		    {
@@ -173,11 +144,7 @@ public class MobileInfoUtils {
 		    return "0.0.0.0";
 	}
 
-	/**
-	 * 获取IPv4版本的ip地址
-	 *
-	 * @return
-	 */
+
 	public String getIPAddress(Context pContext) {
 
 		String strIP = "0.0.0.0";
@@ -198,11 +165,6 @@ public class MobileInfoUtils {
 	    	return strIP;
 	}
 
-	/**
-	 * 获取网络类型
-	 * @param pContext
-	 * @return
-	 */
 	public int getConnectedType(Context pContext) {
 		try {
 			if (RuntimePermissionsCompatible.isNeedCheckPermission(pContext)) {
@@ -220,11 +182,7 @@ public class MobileInfoUtils {
     	return -1;
 	}
 
-	/**
-	 * 内部获取网络连接类型
-	 * @param pContext
-	 * @return
-	 */
+
 	private int getConnectedTypeLocal(Context pContext) {
 		ConnectivityManager connectivityManager = (ConnectivityManager) pContext
 				.getSystemService(Context.CONNECTIVITY_SERVICE);

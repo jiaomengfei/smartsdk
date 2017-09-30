@@ -5,7 +5,7 @@ import android.os.Environment;
 import java.io.File;
 
 /**
- * Created by shenhuniurou
+ * Created by 焦孟飞
  * on 2017/1/3.
  */
 
@@ -19,7 +19,7 @@ public class SdcardConfig {
     /**
      * 根目录
      */
-    public static final String ROOT_FOLDER = SDCARD_FOLDER + "/PHBJ/";
+    public static final String ROOT_FOLDER = SDCARD_FOLDER + "/SMART/";
 
     /**
      * 日志目录

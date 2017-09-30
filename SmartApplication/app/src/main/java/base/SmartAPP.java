@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import bean.Params;
 import utils.Cans;
 import utils.Constant;
+import utils.FileUtil;
 import utils.ParserJson;
 import utils.SdcardConfig;
 import ui.ToastUtil;
@@ -37,6 +38,27 @@ public class SmartAPP extends Application {
             throw new IllegalStateException("Application is not created.");
         }
         return mInstance;
+    }
+
+    /**
+     * 设备宽高
+     */
+    private int screenWidth, screenHeight;
+
+    public int getScreenWidth() {
+        return screenWidth;
+    }
+
+    public void setScreenWidth(int screenWidth) {
+        this.screenWidth = screenWidth;
+    }
+
+    public int getScreenHeight() {
+        return screenHeight;
+    }
+
+    public void setScreenHeight(int screenHeight) {
+        this.screenHeight = screenHeight;
     }
 
     @Override

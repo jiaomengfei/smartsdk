@@ -25,6 +25,12 @@ public class SystemPermissionManager {
     /** 默认的权限请求码 */
     public static final int PERMISSION_REQUEST_CODE = -1;
 
+    //检查SD卡需要的相关权限
+    public static final int PHBJ_PERMISSIONS_SD=10003;
+
+    //检查头像设置SD卡需要的相关权限
+    public static final int PHBJ_PERMISSIONS_SD_AVATAR=10004;
+
     /**
      * 检查联系人权限
      */
@@ -96,6 +102,52 @@ public class SystemPermissionManager {
         RuntimePermissionsCompatible.requestPermissions(paramContext, permissions,
                 PHBJ_PERMISSIONS_CAMERA);
         return isGranted;
+    }
+
+    public static boolean checkApplySDCardPermission(Activity paramContext, String paramDesc, int requestCode) {
+        boolean isGranted = false;
+        Permission permission1 = new Permission("android.permission.WRITE_EXTERNAL_STORAGE", 1);
+        Permission permission2 = new Permission("android.permission.READ_EXTERNAL_STORAGE", 1);
+        String[] permissions = new String[]{permission1.name, permission2.name};
+        if(RuntimePermissionsCompatible.isAnyGranted(paramContext, permissions)) {
+            isGranted = true;
+            return isGranted;
+        } else {
+            if(RuntimePermissionsCompatible.shouldPrompt(paramContext, permissions) && !TextUtils.isEmpty(paramDesc)) {
+                ToastUtil.showToast(paramContext, paramDesc);
+            }
+
+            if(requestCode < 0) {
+                RuntimePermissionsCompatible.requestPermissions(paramContext, permissions, PHBJ_PERMISSIONS_SD);
+                return isGranted;
+            } else {
+                RuntimePermissionsCompatible.requestPermissions(paramContext, permissions, requestCode);
+                return isGranted;
+            }
+        }
+    }
+
+    public static boolean checkAvatarSDCardPermission(Activity paramContext, String paramDesc, int requestCode) {
+        boolean isGranted = false;
+        Permission permission1 = new Permission("android.permission.WRITE_EXTERNAL_STORAGE", 1);
+        Permission permission2 = new Permission("android.permission.READ_EXTERNAL_STORAGE", 1);
+        String[] permissions = new String[]{permission1.name, permission2.name};
+        if(RuntimePermissionsCompatible.isAnyGranted(paramContext, permissions)) {
+            isGranted = true;
+            return isGranted;
+        } else {
+            if(RuntimePermissionsCompatible.shouldPrompt(paramContext, permissions) && !TextUtils.isEmpty(paramDesc)) {
+                ToastUtil.showToast(paramContext, paramDesc);
+            }
+
+            if(requestCode < 0) {
+                RuntimePermissionsCompatible.requestPermissions(paramContext, permissions, PHBJ_PERMISSIONS_SD_AVATAR);
+                return isGranted;
+            } else {
+                RuntimePermissionsCompatible.requestPermissions(paramContext, permissions, requestCode);
+                return isGranted;
+            }
+        }
     }
 
 }

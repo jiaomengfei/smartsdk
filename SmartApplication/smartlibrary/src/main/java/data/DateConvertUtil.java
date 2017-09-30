@@ -3,7 +3,7 @@ package data;
 import android.annotation.SuppressLint;
 
 /**
- * Êı¾İÀàĞÍµÄ×ª»»Àà
+ * æ•°æ®ç±»å‹çš„è½¬æ¢ç±»
  *
  * @author jmf
  *
@@ -11,7 +11,7 @@ import android.annotation.SuppressLint;
 public class DateConvertUtil {
 
 	/**
-	 * ½«byteÊı×é×ª³ÉhexstringµÄ¿É´òÓ¡×Ö·û´®
+	 * å°†byteæ•°ç»„è½¬æˆhexstringçš„å¯æ‰“å°å­—ç¬¦ä¸²
 	 * @param src
 	 * @return
 	 */
@@ -32,8 +32,8 @@ public class DateConvertUtil {
 	}
 
 	/**
-	 * ½«hexstring×ª»»³ÉbyteÊı×é
-	 * 
+	 * å°†hexstringè½¬æ¢æˆbyteæ•°ç»„
+	 *
 	 * @param hexString
 	 * @return
 	 */

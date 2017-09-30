@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import test.jiao.smartapplication.R;
 
@@ -27,6 +28,11 @@ public class GuideAdapter extends PagerAdapter {
         this.context = context;
         inflater = LayoutInflater.from(context);
     }
+//    public void setData(ArrayList<Integer> pList) {
+//        if (pList != null && pList.size() != 0) {
+//            img = pList;
+//        }
+//    }
 
     public void setmCallBack(JumpCallBack mCallBack) {
         this.mCallBack = mCallBack;

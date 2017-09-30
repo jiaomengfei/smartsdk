@@ -10,11 +10,7 @@ import java.io.InputStreamReader;
 
 public class WiFiUtils {
 	
-	/**
-	 * 获取WiFi设备的SSID，即wifi名称
-	 * @param pContext
-	 * @return
-	 */
+
 	public static String getSSID(final Context pContext)  {
 	    String strSSID = null;
 
@@ -31,10 +27,6 @@ public class WiFiUtils {
 	    return strSSID;
 	  }
 
-	/**
-	 * 获取设备的bssid
-	 * @return
-	 */
 	public static String getBssid(final Context pconContext){
 		String strBSSID = null;
 
@@ -51,10 +43,7 @@ public class WiFiUtils {
 	    return strBSSID;
 	  }
 
-	/**
-	 * 获取wifi的mac地址
-	 * @return
-	 */
+
 	public String getMacAddress(Context pContext)
 	  {
 		 String strMAC = null;

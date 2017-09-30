@@ -50,7 +50,7 @@ import ui.ToastUtil;
  * 网页
  */
 
-public class WebViewActivity extends BaseAppActivity {
+public class WebViewActivity extends BaseAppActivity implements View.OnClickListener{
 
     private Intent intent;
     private WebView mWebView;
@@ -64,7 +64,7 @@ public class WebViewActivity extends BaseAppActivity {
         dialog = Loading.dialog(this);
         dialog.show();
         initViews();
-        initData();
+        initData1();
 
     }
 
@@ -135,7 +135,7 @@ public class WebViewActivity extends BaseAppActivity {
 
     String titleStr = "";
 
-    private void initData() {
+    private void initData1() {
         intent = getIntent();
         titleStr = intent.getStringExtra("tv_title");
         String url = intent.getStringExtra("url");
@@ -172,6 +172,11 @@ public class WebViewActivity extends BaseAppActivity {
 //        } else
 //            mWebView.loadUrl(url);
         mWebView.loadUrl("file:///android_asset/test.html");
+
+    }
+
+    @Override
+    public void onClick(View view) {
 
     }
 

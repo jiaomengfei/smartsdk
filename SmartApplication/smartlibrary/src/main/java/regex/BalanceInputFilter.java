@@ -1,4 +1,4 @@
-package data;
+package regex;
 
 import android.text.InputFilter;
 import android.text.Spanned;

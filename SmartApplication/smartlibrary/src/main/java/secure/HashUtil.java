@@ -10,13 +10,7 @@ import data.DateConvertUtil;
 
 public class HashUtil {
 
-	/**
-	 * 获取指定数据的sha1摘要，若是系统不支持，则返回null
-	 *
-	 * @param paramSrcData
-	 *            计算摘要的源数据
-	 * @return
-	 */
+
 	public static byte[] getSha1(String paramSrcData) throws NoSuchAlgorithmException {
 		/**
 		 * Note: This loop is needed as workaround for a bug in Android 2.3.
@@ -35,7 +29,7 @@ public class HashUtil {
 		}
 
 		if (md == null) {
-			throw new NoSuchAlgorithmException("算法不支持!");
+			throw new NoSuchAlgorithmException("锟姐法锟斤拷支锟斤拷!");
 		}
 
 		byte[] pbData = paramSrcData.getBytes();
@@ -44,14 +38,7 @@ public class HashUtil {
 	}
 
 
-	/**
-	 * 获取指定数据的sha1摘要，若是系统不支持，则返回null
-	 *
-	 * @param paramSrcData
-	 *            计算摘要的源数据
-	 * @return
-	 *         HexString格式的sha1
-	 */
+
 	public static String getSha1HexString(String paramSrcData) throws NoSuchAlgorithmException {
 
 		byte[] pbHash = getSha1(paramSrcData);
@@ -59,13 +46,7 @@ public class HashUtil {
 		return DateConvertUtil.bytesToHexString(pbHash);
 	}
 
-	/**
-	 * 获取指定数据的md5摘要，若是系统不支持，则返回null
-	 *
-	 * @param paramSrcData
-	 *            计算摘要的源数据
-	 * @return
-	 */
+
 	public static byte[] getMd5(String paramSrcData) throws NoSuchAlgorithmException {
 		/**
 		 * Note: This loop is needed as workaround for a bug in Android 2.3.
@@ -84,21 +65,14 @@ public class HashUtil {
 		}
 
 		if (md == null) {
-			throw new NoSuchAlgorithmException("算法不支持！");
+			throw new NoSuchAlgorithmException("");
 		}
 
 		byte[] pbData = paramSrcData.getBytes();
 		return md.digest(pbData);
 	}
 
-	/**
-	 * 获取指定数据的md5摘要，若是系统不支持，则返回null
-	 *
-	 * @param paramSrcData
-	 *            计算摘要的源数据
-	 * @return
-	 *         HexString格式的md5
-	 */
+
 	public static String getMd5HexString(String paramSrcData) throws NoSuchAlgorithmException {
 
 		byte[] pbHash = getMd5(paramSrcData);

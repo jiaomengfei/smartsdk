@@ -45,11 +45,6 @@ import javax.crypto.spec.SecretKeySpec;
 
 
 /**
- * 用于安全存储用户的私密数据，包括账户名、密码等小数据
- * 每个手机产生的密钥都不一样，故即使将密文数据考到其他地方也不能使用
- *
- * 对原先的代码进行了修改
- *
  * Wrapper class for Android's {@link SharedPreferences} interface, which adds a layer of
  * encryption to the persistent storage and retrieval of sensitive key-value pairs of primitive
  * data types.
@@ -180,7 +175,7 @@ public class SecurePreferences implements SharedPreferences {
             return cleartext;
         }
         try {
-        	// 初始化向量
+        	// 锟斤拷始锟斤拷锟斤拷锟斤拷
     		IvParameterSpec aIVSpec = null;
     		aIVSpec = new IvParameterSpec(DEFAULT_IV);
 
@@ -200,7 +195,7 @@ public class SecurePreferences implements SharedPreferences {
             return ciphertext;
         }
         try {
-        	// 初始化向量
+        	// 锟斤拷始锟斤拷锟斤拷锟斤拷
     		IvParameterSpec aIVSpec = null;
     		aIVSpec = new IvParameterSpec(DEFAULT_IV);
 

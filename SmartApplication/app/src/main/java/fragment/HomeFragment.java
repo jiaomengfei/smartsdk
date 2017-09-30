@@ -32,6 +32,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import test.jiao.smartapplication.R;
 import utils.Cans;
+import utils.FileUtil;
 import utils.ParserJson;
 
 import static android.content.Context.MODE_PRIVATE;

@@ -2,20 +2,10 @@ package secure;
 
 import java.util.Random;
 
-/**
- * 随机数工具
- *
- * @author dzyssssss
- *
- */
+
 public class RandomUtil {
 
-	/**
-	 * 生成指定长度的随机数，里面只有0-9 a-z A-Z；
-	 * 
-	 * @param length
-	 * @return
-	 */
+
 	public static String genRandom(int length) {
 			StringBuffer buffer = new StringBuffer();
 			Random r = new Random();

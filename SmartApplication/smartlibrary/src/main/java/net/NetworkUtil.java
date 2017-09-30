@@ -33,6 +33,17 @@ public class NetworkUtil {
     public static final int NETWORKTYPE_WIFI = 4;
     private static int mNetWorkType;
 
+    /**
+     * 检测网络是否可用
+     *
+     * @return
+     */
+    public static boolean isNetworkConnected(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo ni = cm.getActiveNetworkInfo();
+        return ni != null && ni.isConnectedOrConnecting();
+    }
+
     public static int getNetWorkType(Context context) {
         ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = manager.getActiveNetworkInfo();

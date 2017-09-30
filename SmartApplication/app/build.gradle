@@ -31,4 +31,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
     compile 'com.mcxiaoke.volley:library:1.0.19'
     compile project(path: ':smartlibrary')
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'cn.finalteam:okhttpfinal:2.0.7'
 }

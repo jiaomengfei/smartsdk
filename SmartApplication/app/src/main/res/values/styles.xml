@@ -20,4 +20,45 @@
         <item name="android:layout_width">0dp</item>
     </style>
 
+    <!-- dialog -->
+    <style name="DialogFullScreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="AppTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff0000</item>
+    </style>
+    <style name="AppTextViewNormal" parent="AppTextView">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- anim -->
+    <style name="buttomAnim">
+        <item name="@android:windowEnterAnimation">@anim/dialog_bottom_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_bottom_exit</item>
+    </style>
+
+    <style name="DialogFullScreenAnim" parent="DialogFullScreen">
+        <item name="android:windowAnimationStyle">@style/buttomAnim</item>
+    </style>
+
+    <style name="DialogFullScreenMain" parent="DialogFullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- line -->
+    <style name="AppLineH">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line_color_item_side_divider</item>
+    </style>
+
 </resources>
