@@ -34,6 +34,7 @@ public class MainActivity extends BaseAppActivity implements View.OnClickListene
      RadioGroup rg;
 
     private RadioButton buttons[];
+
     private ArrayList<BaseFragment> fragments;
     private int current;
     BaseFragment currentFragment = null;
