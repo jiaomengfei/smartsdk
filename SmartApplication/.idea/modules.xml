@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SmartApplication.iml" filepath="$PROJECT_DIR$/SmartApplication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/smartlibrary/smartlibrary.iml" filepath="$PROJECT_DIR$/smartlibrary/smartlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SmartApplication.iml" filepath="$PROJECT_DIR$/.idea/SmartApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SmartApplication.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SmartApplication.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/smartlibrary/SmartApplication.smartlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/smartlibrary/SmartApplication.smartlibrary.iml" />
     </modules>
   </component>
 </project>

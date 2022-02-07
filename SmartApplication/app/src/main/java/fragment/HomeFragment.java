@@ -194,7 +194,7 @@ public class HomeFragment extends BaseFragment implements AdapterView.OnItemClic
             public void onErrorResponse(VolleyError error) {
                 Log.d(TAG, "onErrorResponse: home");
                 if (error.toString().equals("com.android.volley.TimeoutError")) {
-                    Toast.makeText(getActivity(), "网络超时，请重试", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getActivity(), "网络超时，请重试", Toast.LENGTH_SHORT).show();
                     return;
                 }
             }

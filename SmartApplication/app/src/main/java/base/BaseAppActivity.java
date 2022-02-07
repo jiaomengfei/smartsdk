@@ -5,14 +5,13 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.LinearLayout;
 
 import test.jiao.smartapplication.R;
 import ui.SystemBarTintManager;
@@ -140,6 +139,7 @@ public abstract class BaseAppActivity extends AppCompatActivity implements View.
         }
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         loadingdialog = new LoadingDialogUtil(this, requireLoadingDialog());
+        hideBottomUIMenu(this);
     }
 
     @Override
@@ -233,6 +233,19 @@ public abstract class BaseAppActivity extends AppCompatActivity implements View.
             }
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    public static void hideBottomUIMenu(Activity activity) {
+        //隐藏虚拟按键，并且全屏
+        if (Build.VERSION.SDK_INT < 19) { // lower api
+            View v = activity.getWindow().getDecorView();
+            v.setSystemUiVisibility(View.GONE);
+        } else if (Build.VERSION.SDK_INT >= 19) {
+            View decorView = activity.getWindow().getDecorView();
+            int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View
+                    .SYSTEM_UI_FLAG_FULLSCREEN;
+            decorView.setSystemUiVisibility(uiOptions);
+        }
     }
 
 }
