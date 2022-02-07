@@ -41,6 +41,7 @@ public class MainActivity extends BaseAppActivity implements View.OnClickListene
     BaseFragment targartFragment = null;
     FragmentTransaction fragmentTransaction = null;
 
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
